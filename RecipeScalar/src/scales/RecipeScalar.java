@@ -1,7 +1,7 @@
 /*	Programmer: Russel Love
  * 	Date: 07/07/2021
  * 
- * 	Version: 0.0.1
+ * 	Version: 0.0.2
  * 
  *  Purpose: This is a very simple program.
  *  Its purpose is to resolve the inconvenience of 
@@ -12,7 +12,6 @@
  *  files on a computer or smartphone. 
  * 
  */
-
 package scales;
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -63,9 +62,11 @@ public class RecipeScalar {
 
 		// print recipe to console
 		System.out.println("Generating recipe");
-		for (int i = 0; i < weight.size(); i++)
-			System.out.println(ingredients.get(i) + " " + weight.get(i) * recipeMultiplier + "g");
-
+		for (int i = 0; i < weight.size(); i++) {
+			String food = ingredients.get(i);
+			double q = (weight.get(i) * recipeMultiplier);
+			System.out.printf("%-20s %8.1f grams %n", food, q);
+		}
 		// close scanner
 		scan.close();
 	}
