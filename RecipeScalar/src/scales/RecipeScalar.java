@@ -12,6 +12,8 @@
  *  files on a computer or smartphone. 
  * 
  */
+
+//updated from Dell laptop
 package scales;
 import java.util.Scanner;
 import java.util.ArrayList;
