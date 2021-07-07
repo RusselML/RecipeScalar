@@ -87,5 +87,7 @@ public class RecipeScalar {
 		else
 			return false;
 	}
+	
+	public static void writeToFile() {}
 
 }
